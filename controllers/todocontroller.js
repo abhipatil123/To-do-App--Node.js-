@@ -30,9 +30,13 @@ module.exports = function(app){
     });
 
     app.delete('/todo/:item', function(req, res){
-        data = data.filter(function(todo){
-            return todo.item.replace(/ /g, '-') !== req.params.item;
+        var collection = db.get('todos');
+        collection.remove({ _id: req.params.id }, function(err, todos){
+            if (err) throw err;
+            data = data.filter(function(todos){
+                todos.item.replace(/ /g, '-') !== req.params.item;
+            });
+            res.json(data);
         });
-        res.json();
     });
 };
