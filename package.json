@@ -1,0 +1,24 @@
+{
+  "name": "to-do-app--node.js-",
+  "version": "1.0.0",
+  "description": "A simple TO-DO app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhipatil123/To-do-App--Node.js-.git"
+  },
+  "author": "Abhishek Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhipatil123/To-do-App--Node.js-/issues"
+  },
+  "homepage": "https://github.com/abhipatil123/To-do-App--Node.js-#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
